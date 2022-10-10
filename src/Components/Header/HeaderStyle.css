@@ -8,6 +8,9 @@
     color: #cfd1d3;
 }
 
+.header h3{
+    font-size: 22px;
+}
 .header-buttons{
     display: flex;
     justify-content: space-between;

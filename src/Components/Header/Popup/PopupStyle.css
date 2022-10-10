@@ -22,6 +22,7 @@
     border: 1px solid green;
     background-color: #171f30;
     padding:20px;
+    border-radius: 10px;
 }
 
 .title-box{
@@ -59,6 +60,7 @@
     font-size: 20px;
     border:none;
     outline: none;
+    width:400px;
 }
 
 .submit-button{
