@@ -1,0 +1,30 @@
+.movie-list-display-box{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 70px;
+}
+
+
+.movie-list-display-row1{
+    display: flex;
+    overflow:hidden;
+    row-gap: 20px;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+.movie-list-display-poster{
+    width:200px;
+    object-fit: contain;
+    height: 300px; 
+    transition: width , height ;
+}
+
+.movie-list-display-poster img{
+    border-radius: 10px;
+    transition: transform .5s  ;
+    transition-delay: 0.6s;
+}
+
+.movie-list-display-poster:hover img{ 
+    transform: scale(1.4);
+}

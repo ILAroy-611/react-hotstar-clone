@@ -1,4 +1,4 @@
-
+import './reset.css'
 import './App.css';
 import Header from './Components/Header/Header';
 import { Routes, Route } from 'react-router-dom'
