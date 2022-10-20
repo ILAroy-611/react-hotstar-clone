@@ -70,3 +70,58 @@
     border-bottom: 1px solid #1f80e0;
 }
 
+.account{
+    font-size: 18px;
+    display: block;
+    cursor: pointer;
+    color:#cfd1d3;
+}
+.account-options{
+    /* box-sizing: border-box;
+    padding:10px; */
+    background-color: #121926;
+    font-size: 16px;
+    display: block;
+    cursor: pointer;
+    /* border: 1px red solid; */
+    z-index: 4 ;
+    position: fixed;
+    color:#cfd1d3;
+    top:60px;
+    left:90%;
+    width: 120px;
+    height: 70px;
+    padding-top: 4px;
+}
+
+
+
+.account-options a{
+    text-decoration: none;
+    color:#cfd1d3;
+}
+
+.account-options li{
+    height: 35px;
+}
+
+.account-options li:hover{
+    display: block;
+    background-color: #06080c;
+}
+
+/* .account:hover  + .account-options {
+    background-color: #121926;
+    font-size: 18px;
+    display: block;
+    cursor: pointer;
+    border: 1px red solid;
+    z-index: 4 ;
+    position: fixed;
+    color:#cfd1d3;
+    top:60px;
+    left:90%;
+    width: 100px;
+    height: 70px;
+} */
+

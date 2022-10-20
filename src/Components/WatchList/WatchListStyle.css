@@ -1,0 +1,43 @@
+.watchlist-page{
+    height:100vh; 
+}
+
+.watchlist-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#ccced0;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 10px 30px;
+}
+
+.watchlist-logo a{
+    text-decoration: none;
+    color:#ccced0;
+    font-size: 24px;
+}
+.watchlist-user-account{
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.watchlist-user-account button{
+    outline: none;
+    border:none;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: transparent;
+    color:#ccced0;
+    cursor: pointer;
+}
+
+.watchlist-container{
+    color:#ccced0;
+}

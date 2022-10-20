@@ -18,15 +18,18 @@ function Subscribe() {
 
     const handleSubscriber = async (event) => {
         event.preventDefault();
-        try {
-            await axios.post('http://localhost:4000/api/users/register', {
-                username: subscriber.username,
+        let response= await axios.post('http://localhost:4000/api/users/register', {
+                name: subscriber.username,
                 email: subscriber.email,
                 password: subscriber.password
             })
-        }
+            try {
+                if(response.status = 200){
+                    console.log('logged in successfully')
+                }
+            }
         catch (error) {
-            console.log(error);
+            console.log('error', error);
             setError(error);
         }
 

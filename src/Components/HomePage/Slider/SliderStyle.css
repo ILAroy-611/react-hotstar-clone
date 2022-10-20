@@ -1,15 +1,14 @@
-.slider-box {
+/* .slider-box {
     width: 100%;
     box-sizing: border-box;
     height: 440px;
     display: flex;
     padding: 10px 40px;
-    /* border: 1px solid green; */
+    border: 1px solid green;
     margin-top: 20px;
     
 
 }
-
 
 .slider-content {
     box-sizing: border-box;
@@ -19,7 +18,7 @@
     padding-left: 40px;
     padding-right: 14px;
     border-radius: 12px;
-    /* border: 1px solid green; */
+    border: 1px solid green;
 }
 
 .slider-content-title {
@@ -56,7 +55,7 @@
     height: 420px;
     object-fit: contain;
     box-shadow: -8px 0px 8px 1px rgb(8, 8, 8);
-    /* border: 1px solid red; */
+    border: 1px solid red;
 
 }
 
@@ -66,4 +65,101 @@
     align-items: center;
     cursor: pointer;
     color:#ccced0
+} */
+
+.slider-container{
+    box-sizing: border-box;
+    width:100%;
+    height: 500px;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    overflow: scroll  ;
+    scrollbar-width: none;  
+    /* border: 1px solid red; */
 }
+
+
+.slide{
+    box-sizing: border-box;
+    margin-left: 40px;
+    display: flex;
+    min-width:90%;
+    height:440px;
+    background-color: #030b17;
+    /* float: left; */
+    /* border: 1px solid red; */ 
+}
+
+.slider-content{
+    box-sizing: border-box;
+    width: 35%;
+    padding: 100px 20px 0px 20px;
+    /* border: 1px solid red; */
+    color: #ccced0;
+    text-align: justify;
+    background-image: linear-gradient(to right, #030b17 70%, rgb(32, 32, 32));
+}
+.slider-content-title{
+    font-size: 24px;
+    font-weight: 700;
+    height: 60px;
+}
+
+.slider-content-about{
+    font-size: 20px;
+    font-weight: 500;
+    height: 60px;
+    display: flex;
+    
+}
+
+.about{
+    text-transform: capitalize;
+    margin-right: 20px;
+    height: 80px;
+}
+
+.slider-content-overview{
+    font-size: 16px;
+    /* border: 1px solid blue; */
+    height: 200px;
+    line-height: 18px;
+}
+
+.slider-image{
+    box-sizing: border-box;
+    width: 65%;
+    height: 400px;
+    object-fit: cover;
+    
+    /* border: 1px solid red; */
+}
+
+/* .arrow{
+    top: 0;
+    left:0;
+    right: 0;
+    bottom:0;
+    display: flex;
+    border:1px solid blue;
+    min-width:90%;
+    height: 60vh;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color:#ccced0;
+    position: sticky;
+    z-index: 6;
+    background: transparent;
+    
+}  */
+
+.arrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color:#ccced0;
+}
+

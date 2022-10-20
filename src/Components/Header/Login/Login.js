@@ -1,15 +1,17 @@
 import { useState, useEffect } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
-import './PopupStyle.css';
+import './LoginStyle.css';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import instance from '../../../AxiosConfig'
 
-function Popup({ show }) {
+function Login({ show }) {
 
     const navigate = useNavigate();
 
     const [user, setUser] = useState({ email: '', password: '' })
     const [error, setError] = useState('');
+    
 
     const handleChange = event => {
         setUser({ ...user, [event.target.name]: event.target.value });
@@ -17,12 +19,13 @@ function Popup({ show }) {
 
     const handleLogin = async () => {
         try {
-            let response = await axios.post('http://localhost:4000/api/users/login',{ 
+            let response = await instance.post(`login`,{ 
                 email: user.email, 
                 password: user.password })
-
             console.log('res',response);
             if(response.status==200){
+                console.log(response)
+                localStorage.setItem("token", response.data.user.token);
                 navigate('/watch-list');
             }
         }
@@ -63,4 +66,4 @@ function Popup({ show }) {
     )
 }
 
-export default Popup
+export default Login
